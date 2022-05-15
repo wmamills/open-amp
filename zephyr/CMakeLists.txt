@@ -22,5 +22,5 @@ set(WITH_PROXY OFF CACHE BOOL "" FORCE)
 set(LIBMETAL_INCLUDE_DIR ${ZEPHYR_BINARY_DIR}/ext/hal/libmetal/lib/include)
 set(LIBMETAL_LIB ${ZEPHYR_BINARY_DIR}/ext/hal/libmetal/lib)
 
-add_subdirectory(${CONFIG_OPENAMP_SRC_PATH} open-amp)
+add_subdirectory(.. open-amp)
 endif()

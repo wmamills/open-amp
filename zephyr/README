@@ -5,8 +5,7 @@ Origin:
    https://github.com/OpenAMP/open-amp
 
 Import instructions:
-   When we import open-amp we removed the apps dir to reduce the amount of
-   code imported.
+   This repository can be used as-is with the zephyr build system.
 
 Purpose:
    IPC layer that implements rpmsg communication between cores.
@@ -37,9 +36,6 @@ Dependencies:
 
 URL:
    https://github.com/OpenAMP/open-amp/
-
-commit:
-   10dcceca63e5c699312ebc44eac87b63aeb58bf7
 
 Maintained-by:
    External
