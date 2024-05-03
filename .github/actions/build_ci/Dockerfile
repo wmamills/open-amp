@@ -1,7 +1,10 @@
-FROM ubuntu:latest
+FROM ubuntu:24.04
 
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
+
+# If this dir exists, then global bashrc scripts will take care of adding it to the path
+RUN mkdir -p /root/.local/bin
 
 # Install prerequisites
 RUN apt-get --quiet=2 update && apt-get install --quiet=2 --assume-yes sudo git python3 python3-pip wget
