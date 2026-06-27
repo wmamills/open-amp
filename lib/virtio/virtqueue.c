@@ -620,7 +620,7 @@ static int vq_ring_enable_interrupt(struct virtqueue *vq, uint16_t ndesc)
 void virtqueue_notification(struct virtqueue *vq)
 {
 	atomic_thread_fence(memory_order_seq_cst);
-	if (vq->callback)
+	if (vq && vq->callback)
 		vq->callback(vq);
 }
 
